@@ -20,6 +20,11 @@ function initcontainer(){
     });
 }
 
+// Add event listener for click event on all container items
+allcontainer.forEach((link) => {
+    link.addEventListener("click", venueHover);
+});
+
 // Function to move the venue image based on mouse position
 function moveVenueImage(e){
     // Get the x and y coordinates of the mouse

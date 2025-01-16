@@ -111,21 +111,32 @@ img{
 }
 
 /* @media */
-@media(max-width:900px){
-    .container-items{
-        height: 100px; /* Set height for small screens */
+@media(max-width: 600px) {
+    .container-items {
+        height: 80px; /* Adjust container height for phone screens */
     }
-    .item{
-        font-size: 20px; /* Set font size for small screens */
+    .item {
+        font-size: 16px; /* Adjust item font size for phone screens */
+        transition: all 300ms ease-in-out; /* Ensure animations work */
     }
-    .item:hover{
-        flex-grow: 1; /* Prevent growth on hover for small screens */
-        font-size: 20px; /* Maintain font size on hover for small screens */
+    .item:hover {
+        flex-grow: 1; /* Prevent growth on hover for phone screens */
+        font-size: 16px; /* Maintain item font size on hover for phone screens */
     }
-    .container-img-wrap{
-        display: none; /* Hide image container for small screens */
+    .container-img-wrap {
+        display: none; /* Hide image container for phone screens */
     }
-    .navbar{
-        display: none !important; /* Hide navbar for small screens */
+    .navbar {
+        display: none !important; /* Hide navbar for phone screens */
+    }
+    .header {
+        font-size: 20px; /* Adjust header font size for phone screens */
+        padding: 20px; /* Adjust padding for phone screens */
+    }
+    .site-logo {
+        font-size: 18px; /* Adjust logo font size for phone screens */
+    }
+    .link a {
+        font-size: 14px; /* Adjust link font size for phone screens */
     }
 }

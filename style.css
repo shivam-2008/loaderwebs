@@ -1,0 +1,131 @@
+*{
+    margin:0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+body{
+    width: 100%; /* Set body width to 100% */
+    height: 100vh; /* Set body height to 100% of the viewport height */
+    box-sizing: border-box; /* Include padding and border in body's total width and height */
+    background-color: #c5c0b2; /* Set background color */
+    overflow: hidden; /* Hide overflow content */
+}
+.container-items
+{
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Set width to 100% */
+    height: 300px; /* Set height to 300px */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically center */
+    cursor: pointer; /* Change cursor to pointer */
+}
+.item{
+    position: relative; /* Position relatively */
+    flex-grow: 1; /* Allow item to grow */
+    font-family: "Mak"; /* Set font family */
+    font-size: 220px; /* Set font size */
+    transition: all 300ms ease-in-out; /* Animate all properties over 300ms */
+}
+.item:hover{
+    flex-grow: 2; /* Grow item on hover */
+    font-size: 400px; /* Increase font size on hover */
+}
+h3{
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%,-50%); /* Adjust position to center */
+    color: #000; /* Set text color */
+}
+img{
+    width: 100%; /* Set image width to 100% */
+}
+.container-img-wrap{
+    position: absolute; /* Position absolutely */
+    top: -60rem; /* Set top position */
+    left:-80px; /* Set left position */
+    width: 400px; /* Set width */
+    height: 500px; /* Set height */
+    overflow: hidden; /* Hide overflow content */
+    pointer-events: none; /* Disable pointer events */
+    visibility: hidden; /* Hide element */
+}
+.container-img{
+    position: absolute; /* Position absolutely */
+    top:0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    background-size: 100%; /* Set background size */
+    background-repeat: no-repeat; /* Prevent background repeat */
+    background-position: center; /* Center background image */
+}
+.site-logo{
+    position: fixed; /* Fix position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position to center */
+    font-size: 24px; /* Set font size */
+    line-height: 100px; /* Set line height */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+.navbar{
+    position: fixed; /* Fix position */
+    width: 100%; /* Set width to 100% */
+    height: 100px; /* Set height */
+    padding: 0 40px; /* Set padding */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    text-transform: uppercase; /* Transform text to uppercase */
+    line-height: 100px; /* Set line height */
+}
+.site-menu{
+    display: flex; /* Use flexbox layout */
+}
+.menu-item{
+    margin-left: 60px; /* Set left margin */
+}
+.header{
+    position: absolute; /* Position absolutely */
+    width: 100%; /* Set width to 100% */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    top: 20%; /* Set top position */
+    padding: 40px; /* Set padding */
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-size: 40px; /* Set font size */
+    font-family: "Mak"; /* Set font family */
+    z-index: 2; /* Set z-index */
+}
+.header-left span{
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+}
+.link{
+    margin: 40px 0px; /* Set margin */
+}
+.link a{
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Set text color */
+    text-decoration: none; /* Remove text decoration */
+}
+
+/* @media */
+@media(max-width:900px){
+    .container-items{
+        height: 100px; /* Set height for small screens */
+    }
+    .item{
+        font-size: 20px; /* Set font size for small screens */
+    }
+    .item:hover{
+        flex-grow: 1; /* Prevent growth on hover for small screens */
+        font-size: 20px; /* Maintain font size on hover for small screens */
+    }
+    .container-img-wrap{
+        display: none; /* Hide image container for small screens */
+    }
+    .navbar{
+        display: none !important; /* Hide navbar for small screens */
+    }
+}

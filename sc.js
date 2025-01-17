@@ -68,12 +68,4 @@ function venueHover(e){
     }
 }
 
-// Function to initialize the container items
-function init(){
-    initcontainer();
-}
 
-// Add event listener for the window load event to initialize the container items
-window.addEventListener("load",function(){
-    init();
-});

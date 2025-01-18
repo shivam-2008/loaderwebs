@@ -2,6 +2,7 @@
     margin: 0;
     /* Remove default margin */
     padding: 0;
+    font-family: "Rboto";
     /* Remove default padding */
     box-sizing: border-box;
     /* Include padding and border in element's total width and height */
@@ -125,9 +126,12 @@
         /* Set line height */
         text-transform: uppercase;
         /* Transform text to uppercase */
+        z-index: 10;
     }
-
+    
+    
     .navbar {
+        z-index: 10;
         position: fixed;
         /* Fix position */
         width: 100%;
@@ -145,7 +149,7 @@
         line-height: 100px;
         /* Set line height */
     }
-
+    
     .site-menu {
         display: flex;
         /* Use flexbox layout */
@@ -178,7 +182,6 @@
         z-index: 2;
         /* Set z-index */
     }
-
     .header-left span {
         font-family: Arial, Helvetica, sans-serif;
         /* Set font family */
@@ -266,4 +269,180 @@ button:active::after {
 .btn:active {
     color: #000;
     font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.main_box1{
+    background-image: url('img/flower-8431157.jpg');
+    height: 100vh;
+    font-family: "Fredoka";
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+.main_box1 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main_box1 .container .card_wrapper{
+    position: relative;
+}
+.main_box1 .container .card_wrapper .card{
+    position: relative;
+}
+.main_box1 .container .card_wrapper .card .card-img-with-svg-mask{
+    width: 130vh;
+    height: 70vh;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-image: url('img/pexels-pixabay-57481.jpg');
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    position: relative;
+}
+.main_box1 .container .card_wrapper .card .card-img-with-svg-mask p.text{
+    width: 250px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-weight: bold;
+    font-family: 'Roboto';
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.top-center{
+    position: absolute;
+    width: 250px;
+    height: 95px;
+    top: -5%;
+    right: 0%;
+    left: 40%;
+}
+.btn2{
+    filter:blur(-4px);
+}
+.ct1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 255, 1, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    align-items: center;
+}
+.card-bottom-right{
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+}
+.spbtn{
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 30px 50px;
+    background-color: #63e44c;
+}
+/* Mask Image */
+.main_box1 .container .card_wrapper .card .card-img-with-svg-mask{
+    -webkit-mask: url('img/Untitled-removebg-preview (1).png') center /contain no-repeat, url('img/mb-removebg-preview.png') center /contain no-repeat, linear-gradient(#000000 0 0);
+    mask-size: 800px 400px , 60rem;
+    mask-position: top center, bottom right;
+    mask-composite: exclude;
+}
+
+/* scroll cards */
+.stack-area{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    font-family: "Roboto";
+    background-color: #fff;
+}
+
+.stack-area-left{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.stack-left-content{
+    box-sizing: border-box;
+    width: 500px;
+    height: 300px;
+}
+.stack-left-content h1{
+    font-family: "Roboto";
+    font-size: 60px;
+}
+.stack-left-content p{
+    font-family: "Roboto";
+    line-height: 25px;
+    font-size: 20px;
+}
+.stack-left-content button{
+    font-family: "Roboto";
+    background-color: #000;
+    padding: 15px 60px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+}
+.stack-area-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.stack-right-content{
+    width: 350px;
+    height: 350px;
+    padding: 12px 20px;
+    border-radius: 25px;
+
+}
+.stack-area-right .cards{
+    position: absolute;
+    transition: 2s ease-in-out;
+}
+.away {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.stack-area-right .card1{
+    background-color: red;
+}
+.stack-area-right .card2{
+    background-color: green;
+}
+.stack-area-right .card3{
+    background-color: yellow;
+}
+.stack-area-right .card4{
+    background-color: teal;
+}
+.stack-area-right .card5{
+    background-color: rgb(0, 21, 255);
+}
+.stack-area-right .card6{
+    background-color: rgb(0, 255, 238);
 }
